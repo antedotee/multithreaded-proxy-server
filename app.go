@@ -11,8 +11,8 @@ type app struct {
 }
 
 func (a *app) handleError(message string, err error) {
-    if err != nil {
-        a.errorLogger.Printf("%s: %v", message, err)
-        os.Exit(1)
-    }
+	if err != nil {
+		a.errorLogger.Printf("%s: %v", message, err)
+		os.Exit(1)
+	}
 }
